@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thaís Werneck Studio de Pilates | Pilates com fisioterapeuta no Ingá, Niterói</title>
+<meta name="description" content="Pilates personalizado com a fisioterapeuta Thaís Werneck, no Ingá, Niterói. No máximo três alunos por vez. Agende pelo WhatsApp (21) 96837-3000.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23cfe5c6'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='%23141414'%3Etw%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f4f2; --ink:#141414; --paper:#f4f4f2;
+  --mint:#cfe5c6; --mint-deep:#3f6b52;
+  --orange:#e45a2a; --blue:#2a56a0; --wood:#b86a35; --wood-2:#a95f2d;
+  --accent:#1d5c4f; --accent-ink:#ffffff;
+  --step-small:clamp(.8125rem,.79rem + .1vw,.875rem);
+  --step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --m:clamp(16px,3vw,40px);
+  --hdr:68px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:"League Spartan",system-ui,sans-serif;font-weight:700;letter-spacing:-.04em;line-height:.88;text-transform:lowercase}
+.wrap{padding-inline:var(--m)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:14px 22px;border:0;border-radius:0;font:600 1rem/1 Figtree,sans-serif;cursor:pointer;transition:transform .2s ease,background-color .2s ease}
+.btn:hover{background:#164a3f;transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.btn svg{width:20px;height:20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:40;transition:color .3s ease,transform .35s ease;height:var(--hdr);display:flex;align-items:center;justify-content:space-between;gap:20px;padding-inline:var(--m);color:var(--ink)}
+header[data-ink="paper"]{color:var(--paper)}
+header.hid{transform:translateY(-110%)}
+.wm{text-decoration:none;font-family:"League Spartan",sans-serif;font-weight:700;font-size:28px;letter-spacing:-.04em;text-transform:lowercase;line-height:1}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a.l{text-decoration:none;font-weight:600;font-size:1rem;position:relative}
+.nav a.l::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.nav a.l:hover::after{transform:scaleX(1)}
+.nav .btn{padding:12px 18px}
+@media(max-width:820px){.nav a.l{display:none}.wm{font-size:24px}}
+
+/* hero */
+.hero{position:relative;background:var(--mint)}
+.hero .top{position:absolute;inset:0 0 auto 0;height:50svh;background:var(--bg)}
+.hero .stage{position:relative;height:100svh;min-height:640px}
+.hero h1,.hero .h1b{position:absolute;inset:0;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 var(--m) .6em;text-align:center;font-size:clamp(64px,9.5vw,150px);line-height:.86;pointer-events:none}
+.hero h1{color:#2a4a35;z-index:1;pointer-events:auto}
+.hero .h1b{color:var(--ink);clip-path:inset(0 0 50% 0);z-index:2;pointer-events:none;background:var(--bg)}
+.hero .sub{z-index:3}
+.hero h1 span,.hero .h1b span{display:block}
+.hero .sub{position:absolute;left:50%;bottom:56px;transform:translateX(-50%);width:min(620px,calc(100vw - 2*var(--m)));text-align:center;font-size:var(--step-lead);line-height:1.35}
+.hero .after{position:relative;display:grid;grid-template-columns:repeat(12,1fr);gap:16px;align-items:end;padding:24px var(--m) 96px}
+.hero .after figure{grid-column:8/13;display:flex;gap:16px;align-items:flex-end;justify-content:flex-end}
+.hero .after img{width:min(300px,28vw);height:auto;flex:none;aspect-ratio:1;object-fit:cover}
+.hero .after figcaption{font-size:var(--step-small);max-width:20ch;line-height:1.4}
+.hero .after p{grid-column:1/7;font-size:var(--step-body);max-width:40ch}
+@media(max-width:720px){
+  .hero{height:auto;min-height:0}
+  .hero .stage{position:relative;height:100svh}
+  .hero .top{height:46svh}
+  .hero h1{bottom:8svh;font-size:13vw}.hero .h1b{bottom:0;font-size:inherit}
+  .hero .sub{bottom:40px;font-size:1rem;max-width:28ch}
+  .hero .after{position:relative;top:auto;height:auto;display:block;padding:8px var(--m) 56px}
+  .hero .after figure{justify-content:flex-start;margin-top:24px}
+  .hero .after img{width:52vw;height:auto;flex:none}
+}
+
+/* sobre */
+.sobre{padding:20px var(--m)}
+.panel{background:#3d2b29;color:var(--paper);border-radius:12px;min-height:110svh;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:56px}
+.panel h2{font-size:clamp(40px,4.4vw,64px);color:var(--mint)}
+.panel .txt{display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+.panel p{font-size:var(--step-lead);line-height:1.4;max-width:30ch;margin-top:32px}
+.facts{list-style:none;display:grid;gap:18px}
+.facts li{font-size:var(--step-body)}
+.facts b{display:block;font-family:"League Spartan",sans-serif;font-size:clamp(28px,2.6vw,40px);letter-spacing:-.03em;line-height:1;color:var(--paper)}
+.facts span{color:#d9cfc6}
+.shape{align-self:center;justify-self:end;width:min(100%,520px);aspect-ratio:3/4;border-radius:999px 999px 0 0;overflow:hidden}
+.shape img{width:100%;height:100%;object-fit:cover;object-position:35% 30%}
+@media(max-width:860px){.sobre{padding:12px var(--m)}.panel{grid-template-columns:1fr;padding:36px 22px;min-height:0}.shape{justify-self:start;width:100%}}
+
+/* capítulos */
+.cap{position:relative;height:100svh;min-height:640px;color:var(--paper);background:var(--c)}
+.cap .field{display:none}
+.cap .in{position:relative;height:100%}
+.cap h2,.cap h3{position:absolute;left:var(--m);top:calc(var(--hdr) + 16px);font-size:clamp(28px,2.4vw,36px);line-height:1;max-width:14ch}
+.cap figure{position:absolute;left:50%;top:112px;transform:translateX(-50%);height:calc(75% - 20px);aspect-ratio:3/4}
+.cap figure img{width:100%;height:100%;object-fit:cover}
+.cap p{position:absolute;left:var(--m);bottom:32px;max-width:32ch;font-size:1.0625rem}
+.cap a.go{position:absolute;right:var(--m);bottom:32px;font-weight:600;text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;transition:opacity .2s}
+.cap a.go:hover{opacity:.75}
+@media(max-width:720px){
+  .cap{height:auto;min-height:0}
+  .cap .in{padding:96px var(--m) 56px;display:flex;flex-direction:column;gap:24px}
+  .cap h2,.cap h3,.cap figure,.cap p,.cap a.go{position:static;transform:none}
+  .cap h2,.cap h3{font-size:24px}
+  .cap figure{width:80vw;height:calc(80vw*4/3);align-self:center}
+  .cap p{font-size:1rem}
+  .cap a.go{align-self:flex-start}
+}
+
+/* alunos */
+.alunos{background:var(--blue);color:var(--paper);padding:140px var(--m)}
+.q{font-family:"League Spartan",sans-serif;font-weight:700;letter-spacing:-.04em;font-size:9vw;line-height:1;margin:0}
+.q .ln{display:flex;justify-content:space-between;gap:.25em}
+.q .ln+.ln{margin-top:.6em}
+.att{display:flex;justify-content:space-between;margin-top:56px;font-size:18px;font-weight:600}
+.mais{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:140px}
+.mais h2{grid-column:1/13;font-size:var(--step-head);margin-bottom:24px}
+.mais .nota{grid-column:1/4;font-size:var(--step-lead);line-height:1.3}
+.mais .nota b{display:block;font-family:"League Spartan",sans-serif;font-size:clamp(64px,8vw,120px);letter-spacing:-.04em;line-height:.9}
+.mais blockquote{grid-column:span 3;font-size:var(--step-body)}
+.mais blockquote cite{display:block;margin-top:12px;font-style:normal;font-weight:600}
+@media(max-width:900px){.mais .nota{grid-column:1/13}.mais blockquote{grid-column:1/13;max-width:46ch}}
+@media(max-width:720px){
+  .alunos{padding:96px var(--m)}
+  .q{font-size:10vw}
+  .att{flex-direction:column;gap:4px;font-size:15px}.att span:nth-child(2){text-align:center}.att span:nth-child(3){text-align:right}
+  .mais{margin-top:96px}
+}
+
+/* agendar */
+.agendar{background:var(--mint);padding:140px var(--m);display:grid;grid-template-columns:repeat(12,1fr);gap:16px;align-items:start}
+.agendar .esq{grid-column:1/7}
+.agendar h2{font-size:clamp(56px,8vw,128px)}
+.agendar .esq p{margin-top:32px;max-width:36ch;font-size:var(--step-lead);line-height:1.35}
+.vagas{display:flex;gap:14px;margin-top:40px}
+.vagas i{width:clamp(56px,6vw,84px);aspect-ratio:1/1.6;background:var(--accent);display:block}
+.vagas+small{display:block;margin-top:12px;font-size:var(--step-small)}
+.esc{grid-column:8/13;background:var(--bg);padding:32px}
+.esc fieldset{border:0;margin-bottom:28px}
+.esc legend{font-weight:600;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chips span{display:inline-block;padding:12px 16px;background:#e3e8df;font-weight:600;transition:background-color .2s,color .2s,transform .15s}
+.chips label:hover span{transform:translateY(-2px)}
+.chips input:checked+span{background:var(--ink);color:var(--paper)}
+.chips input:focus-visible+span{outline:3px solid var(--orange);outline-offset:2px}
+.msg{background:#e3e8df;padding:18px;font-size:1rem;line-height:1.45;margin-bottom:20px;min-height:84px}
+.agora{margin-top:16px;font-size:var(--step-small)}
+@media(max-width:900px){.agendar .esq,.esc{grid-column:1/13}.esc{margin-top:40px;padding:22px}.agendar{padding:96px var(--m)}}
+
+/* contato */
+.contato{background:var(--accent);color:var(--paper)}
+.row{display:flex;align-items:flex-end;min-height:150px;padding:0 var(--m) 22px;font-family:Figtree,sans-serif;font-weight:400;font-size:clamp(34px,6vw,88px);line-height:1;letter-spacing:-.02em;text-transform:none}
+.row:nth-child(even){background:#18503f}
+.row a{text-decoration:none;transition:opacity .2s}
+.row a:hover{opacity:.7}
+.row h2{font:inherit;letter-spacing:inherit;text-transform:none}
+.row.go{gap:24px;align-items:center}
+.round{width:.9em;height:.9em;border-radius:50%;background:var(--mint);color:var(--ink);display:grid;place-items:center;transition:transform .2s}
+.round:hover{transform:scale(1.08) rotate(-8deg)}
+.round svg{width:45%;height:45%}
+.extra{padding:28px var(--m) 40px;font-size:1rem;display:flex;flex-wrap:wrap;gap:8px 28px}
+@media(max-width:720px){.row{font-size:9.6vw;min-height:84px;padding:0 var(--m) 14px}.row.go{background:var(--mint);color:var(--ink);justify-content:space-between}.row.go .round{width:56px;height:56px;background:var(--ink);color:var(--paper)}}
+
+/* rodapé */
+footer{background:var(--ink);color:var(--paper);padding:80px var(--m) 32px}
+footer .big{font-size:clamp(56px,13.5vw,240px);line-height:.85;white-space:nowrap}
+footer .base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;margin-top:48px;font-size:var(--step-small)}
+footer .base a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:720px){footer .big{white-space:normal}}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-zap" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.41 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.1-1.47-1.1-2.81s.7-2 .95-2.27c.25-.27.54-.34.72-.34h.52c.17 0 .4-.06.62.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46l-.41.48c-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.89 1.04.93 1.92 1.22 2.19 1.35.27.14.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.33Z"/></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+</svg>
+
+<header id="hdr" data-ink="ink">
+  <a class="wm" href="#topo">thaís werneck</a>
+  <nav class="nav" aria-label="Principal">
+    <a class="l" href="#estudio">O estúdio</a>
+    <a class="l" href="#aulas">Aulas</a>
+    <a class="l" href="#alunos">Alunos</a>
+    <a class="l" href="#contato">Contato</a>
+    <a class="btn" href="https://wa.me/5521968373000?text=Ol%C3%A1%2C%20Tha%C3%ADs!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20as%20aulas%20de%20pilates." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-zap"/></svg>Agendar</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="topo" data-ink="ink">
+  <div class="top"></div>
+  <div class="stage">
+    <h1><span>deixa o mundo</span><span>lá fora</span><span class="h1b" aria-hidden="true"><span>deixa o mundo</span><span>lá fora</span></span></h1>
+    <p class="sub">Thaís Werneck Studio de Pilates: pilates personalizado com fisioterapeuta, no Ingá, em Niterói. No máximo três alunos por vez.</p>
+  </div>
+  <div class="after">
+    <p>Saúde pelo movimento e conexão entre corpo e mente, numa sala pequena e silenciosa no 8º andar da Rua Dr. Nilo Peçanha.</p>
+    <figure>
+      <figcaption>A placa na parede do estúdio, ao lado da prateleira.</figcaption>
+      <img id="placa" src="img/placa.jpg" width="720" height="720" alt="Placa na parede do estúdio com a frase Deixa o mundo lá fora, abaixo de uma prateleira com plantas e uma coluna vertebral de estudo">
+    </figure>
+  </div>
+</section>
+
+<section class="sobre" id="estudio" data-ink="paper">
+  <div class="panel">
+    <div class="txt">
+      <div>
+        <h2 class="rv">saúde pelo<br>movimento</h2>
+        <p class="rv">Thaís Werneck é fisioterapeuta e dá aulas de pilates personalizado no próprio estúdio. Cada aula é pensada para o corpo de quem está ali, com atenção a cada movimento.</p>
+      </div>
+      <ul class="facts">
+        <li class="rv"><b>3 alunos</b><span>no máximo, por vez</span></li>
+        <li class="rv"><b>CREFITO-2/53609-F</b><span>fisioterapeuta à frente de cada aula</span></li>
+        <li class="rv"><b>sala 807</b><span>R. Dr. Nilo Peçanha, 80, Ingá</span></li>
+      </ul>
+    </div>
+    <div class="shape rv"><img src="img/porta.jpg" width="720" height="720" alt="Porta de vidro da sala 807 com o logotipo Thais Werneck fisioterapeuta e a frase Saúde pelo movimento"></div>
+  </div>
+</section>
+
+<section id="aulas">
+  <article class="cap" style="--c:#523023" data-ink="paper">
+    <div class="field"></div>
+    <div class="in">
+      <h2>aulas nos aparelhos</h2>
+      <figure><img src="img/aparelhos.jpg" width="720" height="720" alt="Sala do estúdio com reformer, cadeira, barril e cadillac de madeira, e quadros laranja na parede verde"></figure>
+      <p>Reformer, cadillac, cadeira e barril de madeira, os aparelhos clássicos do pilates, todos na mesma sala.</p>
+      <a class="go" href="https://wa.me/5521968373000?text=Ol%C3%A1%2C%20Tha%C3%ADs!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20as%20aulas%20de%20pilates." target="_blank" rel="noopener">Agendar uma aula</a>
+    </div>
+  </article>
+  <article class="cap" style="--c:#6a4526" data-ink="paper">
+    <div class="field"></div>
+    <div class="in">
+      <h3>três por vez</h3>
+      <figure><img src="img/bola.jpg" width="720" height="720" alt="Aluna de costas segurando uma bola azul de pilates sobre o ombro"></figure>
+      <p>No máximo três alunos por turma, para que a Thaís acompanhe de perto cada um, com um olhar personalizado.</p>
+      <a class="go" href="#agendar">Escolher um horário</a>
+    </div>
+  </article>
+  <article class="cap" style="--c:#242e36" data-ink="paper">
+    <div class="field"></div>
+    <div class="in">
+      <h3>equilíbrio para o dia a dia</h3>
+      <figure><img src="img/pe.jpg" width="720" height="720" alt="Pé descalço sobre um disco de equilíbrio laranja com cravos"></figure>
+      <p>Equilíbrio, força e postura trabalhados com aparelhos e acessórios, para as atividades de todo dia.</p>
+      <a class="go" href="#alunos">Ler os alunos</a>
+    </div>
+  </article>
+  <article class="cap" style="--c:#271916" data-ink="paper">
+    <div class="field"></div>
+    <div class="in">
+      <h3>um café antes da aula</h3>
+      <figure><img src="img/cafe.jpg" width="720" height="720" alt="Bancada com máquina de café, xícaras brancas e potes de vidro numa cesta de palha"></figure>
+      <p>Um ambiente pequeno, acolhedor e profissional, com o café esperando na bancada.</p>
+      <a class="go" href="#contato">Como chegar</a>
+    </div>
+  </article>
+</section>
+
+<section class="alunos" id="alunos" data-ink="paper">
+  <blockquote class="q" aria-label="Me sinto forte como se tivesse 45.">
+    <div class="ln rvq" aria-hidden="true"><span>“Me</span><span>sinto</span><span>forte</span></div>
+    <div class="ln rvq" aria-hidden="true"><span>como se</span><span>tivesse</span><span>45.”</span></div>
+  </blockquote>
+  <div class="att rv"><span>José Marques</span><span>aluno, 77 anos</span><span>avaliação no Google</span></div>
+
+  <div class="mais">
+    <h2 class="rv">o que dizem os alunos</h2>
+    <div class="nota rv"><b>4,8</b>de 5, em 20 avaliações no Google</div>
+    <blockquote class="rv">“A quantidade de alunos por turma é ótima, permitindo um acompanhamento mais próximo e personalizado. Um ambiente agradável e profissional.”<cite>Claudia Monclar</cite></blockquote>
+    <blockquote class="rv">“Comecei com um trabalho personalizado com Thaís, depois de uma crise incapacitante de hérnia de disco. O pilates bem orientado foi fundamental para minha plena recuperação.”<cite>Fabiana Gallotta</cite></blockquote>
+    <blockquote class="rv">“Ela sempre se recicla para atualizar e variar os exercícios, nos oferecendo aulas dinâmicas.”<cite>Jessica Mattos</cite></blockquote>
+  </div>
+</section>
+
+<section class="agendar" id="agendar" data-ink="ink">
+  <div class="esq">
+    <h2 class="rv">escolha seu horário</h2>
+    <p class="rv">Monte o pedido aqui e ele vai pronto para o WhatsApp da Thaís. Cada turma tem três lugares.</p>
+    <div class="vagas rv" aria-hidden="true"><i></i><i></i><i></i></div>
+    <small class="rv">Três lugares por turma.</small>
+  </div>
+  <form class="esc rv" id="esc" action="https://wa.me/5521968373000" target="_blank">
+    <fieldset>
+      <legend>Dia</legend>
+      <div class="chips">
+        <label><input type="radio" name="dia" value="segunda" checked><span>Seg</span></label>
+        <label><input type="radio" name="dia" value="terça"><span>Ter</span></label>
+        <label><input type="radio" name="dia" value="quarta"><span>Qua</span></label>
+        <label><input type="radio" name="dia" value="quinta"><span>Qui</span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Período</legend>
+      <div class="chips">
+        <label><input type="radio" name="per" value="de manhã" checked><span>Manhã, 7h–12h</span></label>
+        <label><input type="radio" name="per" value="à tarde"><span>Tarde, 12h–17h</span></label>
+        <label><input type="radio" name="per" value="no fim do dia"><span>Fim do dia, 17h–19h</span></label>
+      </div>
+    </fieldset>
+    <div class="msg" id="msg" aria-live="polite">Olá, Thaís! Vim pelo site e queria saber se tem vaga na segunda de manhã.</div>
+    <input type="hidden" name="text" id="txt" value="Olá, Thaís! Vim pelo site e queria saber se tem vaga na segunda de manhã.">
+    <button class="btn" type="submit"><svg aria-hidden="true"><use href="#i-zap"/></svg>Enviar no WhatsApp</button>
+    <p class="agora" id="agora">Atendimento de segunda a quinta, das 7h às 19h.</p>
+  </form>
+</section>
+
+<section class="contato" id="contato" data-ink="paper">
+  <div class="row"><h2>Thaís Werneck Studio de Pilates</h2></div>
+  <div class="row"><a href="https://www.google.com/maps/search/?api=1&query=Thais+Werneck+Studio+de+Pilates+Niter%C3%B3i" target="_blank" rel="noopener">R. Dr. Nilo Peçanha, 80, sala 807</a></div>
+  <div class="row">Ingá, Niterói, 24210-480</div>
+  <div class="row">seg a qui, 7h às 19h</div>
+  <div class="row"><a href="tel:+5521968373000">(21) 96837-3000</a></div>
+  <div class="row go">Vem? <a class="round" href="https://wa.me/5521968373000?text=Ol%C3%A1%2C%20Tha%C3%ADs!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20as%20aulas%20de%20pilates." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg><use href="#i-seta"/></svg></a></div>
+  <div class="extra"><span>É recomendado marcar hora.</span><span>Entrada acessível para cadeira de rodas.</span><span>Cartão de crédito e débito.</span></div>
+</section>
+</main>
+
+<footer data-ink="paper">
+  <div class="big disp">thaís werneck</div>
+  <div class="base">
+    <span>Studio de Pilates · Fisioterapeuta CREFITO-2/53609-F</span>
+    <a href="https://www.instagram.com/euthaiswerneck/" target="_blank" rel="noopener">@euthaiswerneck</a>
+    <span>Site por <a href="https://firmiano.com.br" target="_blank" rel="noopener">Firmiano</a></span>
+  </div>
+</footer>
+
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script>
+// pedido pelo WhatsApp
+(function(){
+  const f=document.getElementById('esc'),m=document.getElementById('msg'),t=document.getElementById('txt');
+  const upd=()=>{const d=f.dia.value,p=f.per.value;const s=`Olá, Thaís! Vim pelo site e queria saber se tem vaga na ${d} ${p}.`;m.textContent=s;t.value=s;};
+  f.addEventListener('change',upd);
+  f.addEventListener('submit',e=>{e.preventDefault();upd();window.open('https://wa.me/5521968373000?text='+encodeURIComponent(t.value),'_blank','noopener');});
+  // aberto agora? (horário de Brasília)
+  try{
+    const now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Sao_Paulo'}));
+    const d=now.getDay(),h=now.getHours()+now.getMinutes()/60,el=document.getElementById('agora');
+    if(d>=1&&d<=4&&h>=7&&h<19) el.textContent='Agora: estúdio aberto, até as 19h.';
+    else{const nx=(d>=1&&d<=3&&h>=19)?'amanhã às 7h':(d>=1&&d<=4&&h<7)?'hoje às 7h':'segunda às 7h';el.textContent='Agora: estúdio fechado. Abre '+nx+'.';}
+  }catch(e){}
+})();
+
+if(window.gsap&&window.ScrollTrigger){
+  gsap.registerPlugin(ScrollTrigger);
+  const hdr=document.getElementById('hdr');
+  // cor do cabeçalho segue o capítulo
+  document.querySelectorAll('[data-ink]:not(header)').forEach(s=>{
+    ScrollTrigger.create({trigger:s,start:'top '+34,end:'bottom '+34,onToggle:self=>{if(self.isActive)hdr.dataset.ink=s.dataset.ink}});
+  });
+  const mm=gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference)',()=>{
+    // entrada do título
+    gsap.from('.hero h1',{y:48,opacity:0,duration:1,ease:'power3.out'});
+    gsap.from('.hero .sub',{y:24,opacity:0,duration:.8,delay:.35,ease:'power2.out'});
+    // a placa aproxima com a rolagem
+    gsap.fromTo('#placa',{scale:.9},{scale:1.06,ease:'none',scrollTrigger:{trigger:'.hero .after',start:'top bottom',end:'bottom top',scrub:1}});
+    // entradas por seção
+    ScrollTrigger.batch('.rv',{start:'top 88%',once:true,onEnter:els=>gsap.from(els,{y:28,opacity:0,duration:.7,ease:'power2.out',stagger:.08})});
+    gsap.utils.toArray('.rvq').forEach((ln,i)=>{
+      gsap.from(ln.children,{opacity:0,y:40,duration:.8,ease:'power3.out',stagger:.07,scrollTrigger:{trigger:ln,start:'top 90%',once:true}});
+    });
+    // capítulos: o painel cresce até a borda e a foto assenta
+    gsap.utils.toArray('.cap').forEach(c=>{
+      const tl=gsap.timeline({scrollTrigger:{trigger:c,start:'top 85%',end:'top 15%',scrub:.6}});
+      tl.fromTo(c.querySelector('figure'),{clipPath:'inset(6% 6% 6% 6%)'},{clipPath:'inset(0% 0% 0% 0%)',ease:'power2.out'},0)
+        .fromTo(c.querySelector('figure img'),{scale:1.12},{scale:1,ease:'power2.out'},0)
+        .from(c.querySelectorAll('h2,h3,p,a.go'),{y:24,opacity:0,stagger:.06,ease:'power2.out'},.1);
+    });
+    gsap.from('.vagas i',{scaleY:0,transformOrigin:'bottom',duration:.6,ease:'back.out(1.6)',stagger:.12,scrollTrigger:{trigger:'.vagas',start:'top 90%',once:true}});
+    gsap.from('.contato .row',{xPercent:-4,opacity:0,duration:.7,ease:'power2.out',stagger:.07,scrollTrigger:{trigger:'.contato',start:'top 80%',once:true}});
+    gsap.from('footer .big',{yPercent:30,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:'footer',start:'top 90%',once:true}});
+  });
+  ScrollTrigger.create({start:0,end:'max',onUpdate:self=>hdr.classList.toggle('hid',self.direction===1&&self.scroll()>200)});
+  window.addEventListener('load',()=>ScrollTrigger.refresh());
+}
+</script>
+</body>
+</html>
